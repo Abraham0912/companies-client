@@ -1,9 +1,17 @@
 import React from 'react'
+import '../assets/styles/LayoutStyles.sass'
 
 export const LayautMain = ({children}) => {
     return (
         <div>
-            <h1>Welcome to LayautMain.js</h1>
+            <header>
+                <div className="content">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/example">Example</a></li>
+                    </ul>
+                </div>
+            </header>
             {children}
         </div>
     )
