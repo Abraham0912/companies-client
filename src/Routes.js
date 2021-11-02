@@ -2,19 +2,18 @@ import React, { Component } from 'react'
 import {
     BrowserRouter as Router,
     Switch,
-    Route,
-    Link
+    Route
   } from "react-router-dom";
-import Home from './components/Home'
-import Example from './components/Example'
-import { LayautMain } from './layauts/LayautMain';
+import Home from './pages/Home'
+import Example from './pages/Example'
+import { LayoutMain } from './layauts/LayoutMain';
 
 export default class Routes extends Component {
   render() {
     return (
       <>
       <Router>
-      <LayautMain>
+      <LayoutMain>
         <Switch>
           <Route exact path="/">
             <Home />
@@ -24,7 +23,7 @@ export default class Routes extends Component {
             <Example />
           </Route>
         </Switch>
-        </LayautMain>
+        </LayoutMain>
       </Router>
       </>
     )

@@ -1,7 +1,7 @@
 import React from 'react'
 import '../assets/styles/LayoutStyles.sass'
 
-export const LayautMain = ({children}) => {
+export const LayoutMain = ({children}) => {
     return (
         <div>
             <header>
