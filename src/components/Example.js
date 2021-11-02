@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import '../assets/styles/HomeStyles.sass'
 
 export default class Example extends Component {
   constructor(props){
@@ -22,8 +23,9 @@ export default class Example extends Component {
   listCompanies(){
     return this.state.empresas.map((empresa)=>{
       return(
-        <div key={empresa.id}>
-          <p>{empresa.name}</p>
+        <div key={empresa.id} className="itemList-item">
+          <h1>{empresa.name}</h1>
+          <p>{empresa.description}</p>
         </div>
       )
     })
@@ -31,8 +33,12 @@ export default class Example extends Component {
   render() {
     return (
       <>
-        <h2>Example.js</h2>
-        {this.listCompanies()}
+      <div className="App">
+        <div className="iteList">
+          {this.listCompanies()}
+        </div>
+      </div>
+        
       </>
     )
   }
