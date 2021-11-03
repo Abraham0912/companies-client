@@ -1,10 +1,24 @@
 import React from 'react'
-
-const EditBox= ()=> {
+import PolicyForm from '../../forms/PolicyForm'
+ 
+const EditBox= ({props})=> {
+    const toggleForms = ()=>{
+        if (props.developView === true) {
+            return <h1>developView</h1>
+        } else if(props.policyView === true){
+            return <PolicyForm/>
+        }else if(props.teleView === true){
+            return <h1>teleView</h1>
+        }else{
+            return <h1>Ninguno en true</h1>
+        }
+    }
     return (
       <>
-        <div>
-            <h1>src/components/edit/EditBox.js</h1>
+        <div className="feature-banner">
+            <div className="feature-banner-box">
+                {toggleForms()}
+            </div>
         </div>
       </>
     )
