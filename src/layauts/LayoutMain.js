@@ -9,6 +9,7 @@ export const LayoutMain = ({children}) => {
                     <ul>
                         <li><a href="/">Home</a></li>
                         <li><a href="/example">Example</a></li>
+                        <li><a href="/empresas/25/edit">Edit</a></li>
                     </ul>
                 </div>
             </header>

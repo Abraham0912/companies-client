@@ -7,6 +7,7 @@ import {
 import Home from './pages/Home'
 import Example from './pages/Example'
 import { LayoutMain } from './layauts/LayoutMain';
+import Edit from './pages/Edit';
 
 export default class Routes extends Component {
   render() {
@@ -21,6 +22,10 @@ export default class Routes extends Component {
 
           <Route exact path="/example">
             <Example />
+          </Route>
+
+          <Route exact path="/empresas/:id/edit">
+            <Edit />
           </Route>
         </Switch>
         </LayoutMain>
