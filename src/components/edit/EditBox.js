@@ -8,7 +8,7 @@ const EditBox= ({props})=> {
         } else if(props.policyView === true){
             return <PolicyForm/>
         }else if(props.teleView === true){
-            return <h1>teleView</h1>
+            return <TeleForm/>
         }else{
             return <h1>Ninguno en true</h1>
         }
