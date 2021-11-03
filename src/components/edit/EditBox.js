@@ -1,10 +1,12 @@
 import React from 'react'
 import PolicyForm from '../../forms/PolicyForm'
+import TeleForm from '../../forms/TeleForm'
+import DevelopForm from '../../forms/DevelopForm'
  
 const EditBox= ({props})=> {
     const toggleForms = ()=>{
         if (props.developView === true) {
-            return <h1>developView</h1>
+            return <DevelopForm/>
         } else if(props.policyView === true){
             return <PolicyForm/>
         }else if(props.teleView === true){
