@@ -10,6 +10,7 @@ export default class Example extends Component {
       empresas:[]
     };
   }
+  contantes=22
   componentDidMount(){
     axios.get('http://localhost:3002/api/v1/companies')
     .then(response=>{
