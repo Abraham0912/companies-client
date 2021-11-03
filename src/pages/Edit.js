@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import '../assets/styles/ViewStyles.sass'
+import EditBox from '../components/edit/EditBox'
 import { FeatureList } from '../components/edit/FeatureList'
 
 export default class Edit extends Component {
@@ -30,6 +31,7 @@ export default class Edit extends Component {
         <div className="content">
             <div className="feature-section">
                 <FeatureList handleClick={this.toggleView.bind(this)}/>
+                <EditBox/>
             </div>
         </div>
       </>
