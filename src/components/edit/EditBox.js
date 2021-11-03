@@ -1,7 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class EditBox extends Component {
-  render() {
+const EditBox= ()=> {
     return (
       <>
         <div>
@@ -9,5 +8,6 @@ export default class EditBox extends Component {
         </div>
       </>
     )
-  }
 }
+
+export default EditBox;
