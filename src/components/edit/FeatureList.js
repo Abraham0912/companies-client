@@ -7,13 +7,10 @@ import FeatureItem from './FeatureItem'
 
 export const FeatureList = ({handleClick}) => {
     return (
-        <div>
-            <h2>Lista de items (FeatureList.js)</h2>
             <div className="feature-list">
-                <FeatureItem text="Swamper" ImgComponent={PolicyImg} handleClick={handleClick.bind(this,"policyView")}/>
-                <FeatureItem text="Abraham" ImgComponent={TeleImg} handleClick={handleClick.bind(this,"teleView")}/>
-                <FeatureItem text="Ericka" ImgComponent={DevelopImg} handleClick={handleClick.bind(this,"developView")}/>
+                <FeatureItem text="policyView" ImgComponent={PolicyImg} handleClick={handleClick.bind(this,"policyView")}/>
+                <FeatureItem text="teleView" ImgComponent={TeleImg} handleClick={handleClick.bind(this,"teleView")}/>
+                <FeatureItem text="developView" ImgComponent={DevelopImg} handleClick={handleClick.bind(this,"developView")}/>
             </div>
-        </div>
     )
 }

@@ -25,13 +25,12 @@ export default class Edit extends Component {
         })
     }
   render() {
-  console.log(this.state)
     return (
       <>
         <div className="content">
             <div className="feature-section">
                 <FeatureList handleClick={this.toggleView.bind(this)}/>
-                <EditBox/>
+                <EditBox props={this.state}/>
             </div>
         </div>
       </>
