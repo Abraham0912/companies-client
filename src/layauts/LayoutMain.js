@@ -8,8 +8,8 @@ export const LayoutMain = ({children}) => {
                 <div className="content">
                     <ul>
                         <li><a href="/">Home</a></li>
-                        <li><a href="/example">Example</a></li>
-                        <li><a href="/empresas/25/edit">Edit</a></li>
+                        <li><a href="/example">Companies</a></li>
+                        <li><a href="/empresas/25/edit">EditCompany</a></li>
                     </ul>
                 </div>
             </header>

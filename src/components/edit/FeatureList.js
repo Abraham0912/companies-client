@@ -8,9 +8,9 @@ import FeatureItem from './FeatureItem'
 export const FeatureList = ({handleClick}) => {
     return (
             <div className="feature-list">
-                <FeatureItem text="policyView" ImgComponent={PolicyImg} handleClick={handleClick.bind(this,"policyView")}/>
-                <FeatureItem text="teleView" ImgComponent={TeleImg} handleClick={handleClick.bind(this,"teleView")}/>
-                <FeatureItem text="developView" ImgComponent={DevelopImg} handleClick={handleClick.bind(this,"developView")}/>
+                <FeatureItem text="Politicas" ImgComponent={PolicyImg} handleClick={handleClick.bind(this,"policyView")}/>
+                <FeatureItem text="Telecomunicaión y seguridad" ImgComponent={TeleImg} handleClick={handleClick.bind(this,"teleView")}/>
+                <FeatureItem text="acquisition, desarrollo y mantenimiento" ImgComponent={DevelopImg} handleClick={handleClick.bind(this,"developView")}/>
             </div>
     )
 }
